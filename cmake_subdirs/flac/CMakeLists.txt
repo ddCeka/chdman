@@ -19,13 +19,18 @@ add_compile_definitions(
     CPU_IS_BIG_ENDIAN=0
     CPU_IS_LITTLE_ENDIAN=1
     WORDS_BIGENDIAN=0
-    HAVE_BSWAP16
-    HAVE_BSWAP32
 )
 
 if(MINGW)
 add_compile_definitions(
 HAVE_FSEEKO
+)
+endif()
+
+if(NOT MSVC)
+add_compile_definitions(
+HAVE_BSWAP16
+HAVE_BSWAP32
 )
 endif()
 

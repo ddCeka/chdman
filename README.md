@@ -21,7 +21,7 @@ pkg install build-essential git cmake ninja
 ### Build chdman
 
 ```
-git clone https://codeberg.org/ddCeka/chdman-termux --depth 1 chdman
+git clone https://github.com/ddCeka/chdman.git --depth 1
 cd chdman
 cmake -B build -G Ninja
 cmake --build build

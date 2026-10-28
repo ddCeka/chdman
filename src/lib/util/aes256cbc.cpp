@@ -3,6 +3,6 @@
 
 namespace aes256cbc {
 
-#include <aes256cbc.h>
+#include <aes256cbc/AES_256_CBC.h>
 
 }
